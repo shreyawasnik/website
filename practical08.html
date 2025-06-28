@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form with Icons</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e9f0f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-box {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      width: 320px;
+    }
+
+    .form-box h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-group i {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #888;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px 10px 10px 35px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .input-group input:focus {
+      border-color: #ff1100;
+      outline: none;
+    }
+
+    .form-box button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #5406ad;
+      color: #fff;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .form-box button:hover {
+      background: #8000b3;
+    }
+  </style>
+</head>
+<h2><i>Shreya Wasnik<br>{CS24044}</i></h2>
+<body bgcolor="antiquewhite">
+   <div class="form-box">
+    <h2>Registeration Form</h2>
+    <form >
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Full Name" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa-solid fa-phone"></i>
+        <input type="number" placeholder="Phone number" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email Address" required>
+      </div>
+      <div class="input-group">
+        <i class="fa-solid fa-address-card"></i>
+        <input type="text" placeholder="Address" required>
+      </div>
+      <div class="input-group">
+        <i class="fa-solid fa-cake-candles"></i>
+        <label for="birthday"></label>
+        <input type="date" name="dto id="date_timepicker_end"><br>
+      </div>
+      <div class="input-group">
+        <i class="fa-solid fa-school"></i>
+        <input type="text" placeholder="College Name" required>
+      </div>
+      <div class="input-group">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <input type="text" placeholder="Course" required>
+      </div>
+      <div>
+        <div class="input-group"></div>
+        <i class="fa-solid fa-person-half-dress"></i>
+      <label>Gender</label><br>
+      <input type="radio"name="Gender">Male
+      <input type="radio"name="Gender">Female
+      <input type="radio"name="Gender">Other
+    </div>
+    <div>
+        <div class="input-group"></div>
+        <i class="fa-solid fa-wheelchair"></i>
+        <label>Disability</label><br>
+        <input type="radio"name="Disability">Yes
+        <input type="radio"name="Disability">No
+        
+      </div>
+
+      <div class="input-group">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" placeholder="Password" required>
+      </div>
+      
+      
+      
+      <button type="submit">
+        <i class="fas fa-paper-plane"></i> Register
+      </button>
+    </form>
+  </div>
+
+</body>
+</html>
